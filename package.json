@@ -1,7 +1,7 @@
 {
   "name": "@sksizer/simple-object-model",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simple utility library for creating object model in JavaScript from JSON based on field name conventions",
   "main": "dist/index.js",
   "files": [
@@ -11,12 +11,8 @@
     "type-check": "tsc --watch",
     "format-check": "npx prettier . --check",
     "format": "npx prettier . --write",
-    "test-dist": "rm -Rf dist && rm -Rf node_modules && node ./scripts/postinstall.js",
-    "pnpm-install": "pnpm install",
-    "npm-install": "npm install",
-    "yarn-install": "yarn install",
+    "test-dist": "rm -Rf dist && rm -Rf node_modules && pnpm install && pnpm build && pnpm test",
     "test": "pnpm vitest",
-    "postinstall": "node ./scripts/postinstall.js",
     "test-package": "tsc && prettier . --check && pnpm run test-dist",
     "build": "rollup -c"
   },
@@ -35,8 +31,7 @@
     "rollup": "^4.9.6",
     "tslib": "^2.6.2",
     "typescript": "^5.3.3",
-    "vite": "5.1.0-beta.0",
+    "vite": "^5.1.1",
     "vitest": "^1.2.1"
-  },
-  "dependencies": {}
+  }
 }
