@@ -1,0 +1,27 @@
+{
+  "type1": {
+    "metadata": {
+      "transforms": [
+        {
+          "sourceField": "_k",
+          "targetField": "date",
+          "transform": "date"
+        }
+      ]
+    },
+    "data": [
+      {
+        "_k": "2017-01-01T13:00:00.000Z",
+        "value": 1
+      },
+      {
+        "_k": "2017-01-02T00:00:00.000Z",
+        "value": 2
+      },
+      {
+        "_k": "2017-01-03T00:00:00.000Z",
+        "value": 3
+      }
+    ]
+  }
+}

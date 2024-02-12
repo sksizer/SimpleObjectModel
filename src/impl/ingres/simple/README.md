@@ -1,0 +1,1 @@
+The default (and probably only) strategy for bringing data into the som contexts. Takes a hierarchy of unlinked objects and based on conventions of data shape can link them together.

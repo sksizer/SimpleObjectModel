@@ -1,0 +1,22 @@
+{
+  "type1": {
+    "data": [
+      {
+        "_k": 1,
+        "n": "something"
+      },
+      {
+        "_k": 2,
+        "n": "something else"
+      },
+      {
+        "_k": 3,
+        "n": "something else"
+      },
+      {
+        "_k": 4,
+        "n": "something else"
+      }
+    ]
+  }
+}

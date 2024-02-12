@@ -1,0 +1,33 @@
+{
+  "include": ["src/**/*"],
+  "compilerOptions": {
+    "moduleResolution": "bundler", // Expect bundler to handle module resolution
+    /* Language and Environment */
+    "target": "ESNext",
+    /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+
+    /* Modules */
+    "module": "esnext",
+    /* Specify what module code is generated. */
+    "baseUrl": "./src" /* Specify the base directory to resolve non-relative module names. */,
+    "rootDir": "./src" /* Specify the root folder within your source files. */,
+    "paths": {
+      "@/*": ["*"],
+      "~/*": ["*"],
+    },
+    /* Specify a set of entries that re-map imports to additional lookup locations. */
+    "resolvePackageJsonImports": true,
+    /* Use the package.json 'imports' field when resolving imports. */
+
+    /* Emit */
+    "declaration": true /* Generate .d.ts files from TypeScript and JavaScript files in your project. */,
+    "outDir": "./dist" /* Specify an output folder for all emitted files. */,
+    "esModuleInterop": true /* Emit additional JavaScript to ease support for importing CommonJS modules. */,
+    "forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
+
+    /* Type Checking */
+    "strict": true,
+    /* Completeness */
+    "skipLibCheck": true,
+  },
+}
